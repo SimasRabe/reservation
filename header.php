@@ -9,9 +9,16 @@
 		<title>Reservations</title>
 		<link rel="stylesheet" type="text/css" href="style.css?version=28">
 	</head>
+	
 
 	<body>
-
+	if(isset($_GET['login'])=='empty'){
+		echo'<font color="#FF0000"><p align="center">Norint prisijungti irasykite savo el pasta ir slaptazodi</p></font>';
+		// checking if there is an error that can be because of username or password
+		if($_GET['login'] == "error"){
+			echo'<font color="#FF0000"><p align="center">blogas emailas arba slaptazodis</p></font>';
+		}
+		}
 		<header>
 			<nav>
 				<div class="main-wrapper">
