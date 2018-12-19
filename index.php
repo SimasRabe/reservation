@@ -20,7 +20,7 @@
 	
 	
 			// checking if there is an error that can be because of username or password
-			if($_GET["login"] == "error"){
+			if($_GET['login'] === "error"){
 				echo'<font color="#FF0000"><p align="center">blogas emailas arba slaptazodis</p></font>';
 			}
 		?>
