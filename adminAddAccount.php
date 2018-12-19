@@ -28,17 +28,16 @@
 					</select>
 					<button type="submit" name="submit">Patvirtinti</button>
 				</form>';
-				if(isset($_GET["add"])){
-					if($_GET["add"] == "success"){
+				if(isset($_GET["signup"])){
+					if($_GET["signup"] == "success"){
 						echo'<font color="##000000"><p align="center">Sėkmingai užsiregistravote!</p></font>';
 					}
-					if($_GET['add'] == "empty"){
+					if($_GET['signup'] == "empty"){
 						echo'<font color="##000000"><p align="center">Tam kad užsiregistruotumėte turite užpildyti visus langelius</p></font>';
 					}
-					if($_GET['add'] == "invalid"){
+					if($_GET['signup'] == "invalid"){
 						echo'<font color="##000000"><p align="center">Blogai užpildėte langelius, mėginkite vėl!</p></font>';
 					}
-				}
 				
 			} else
 				header("Location: index.php");
