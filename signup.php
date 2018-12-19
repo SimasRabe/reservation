@@ -21,15 +21,14 @@
 				// ismeta kokia yra registracijos busena
 				if(isset($_GET["signup"])){
 					if($_GET["signup"] == "success"){
-						echo'<font color="##000000"><p align="center">Sėkmingai Užregistravote!</p></font>';
+						echo'<font color="##000000"><p align="center">Sėkmingai užsiregistravote!</p></font>';
 					}
 					if($_GET['signup'] == "empty"){
-						echo'<font color="##000000"><p align="center">Užpildykite visus langelius</p></font>';
+						echo'<font color="##000000"><p align="center">Tam kad užsiregistruotumėte turite užpildyti visus langelius</p></font>';
 					}
 					if($_GET['signup'] == "invalid"){
-						echo'<font color="##000000"><p align="center">Blogai užpildyta</p></font>';
+						echo'<font color="##000000"><p align="center">Blogai užpildėte langelius, mėginkite vėl!</p></font>';
 					}
-				}
 				
 			}
 		?>
