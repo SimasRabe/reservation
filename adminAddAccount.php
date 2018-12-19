@@ -28,6 +28,18 @@
 					</select>
 					<button type="submit" name="submit">Patvirtinti</button>
 				</form>';
+				if(isset($_GET["adminAddAccount"])){
+					if($_GET["adminAddAccount"] == "success"){
+						echo'<font color="##000000"><p align="center">Sėkmingai užsiregistravote!</p></font>';
+					}
+					if($_GET['adminAddAccount'] == "empty"){
+						echo'<font color="##000000"><p align="center">Tam kad užsiregistruotumėte turite užpildyti visus langelius</p></font>';
+					}
+					if($_GET['adminAddAccount'] == "invalid"){
+						echo'<font color="##000000"><p align="center">Blogai užpildėte langelius, mėginkite vėl!</p></font>';
+					}
+				}
+				
 			} else
 				header("Location: index.php");
 		?>
