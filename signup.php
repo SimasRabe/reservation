@@ -18,9 +18,15 @@
 					<button type="submit" name="submit">Patvirtinti</button>
 				</form>';
 				if($_GET['signup'] == "success"){
-					echo'<font color="##000000"><p align="center">registracija issiusta administracijai</p></font>';
-					echo'<font color="##000000"><p align="center">registracija bus priimta arba atmesta per 24 valandas</p></font>';
-			}
+					echo'<font color="##000000"><p align="center">Sėkmingai užsiregistravote!</p></font>';
+				}
+				if($_GET['signup'] == "empty"){
+					echo'<font color="##000000"><p align="center">Tam kad užsiregistruotumėte turite užpildyti visus langelius</p></font>';
+				}
+				if($_GET['signup'] == "invalid"){
+					echo'<font color="##000000"><p align="center">Blogai užpildėte langelius, mėginkite vėl!</p></font>';
+				}
+				
 			}
 		?>
 	</div>
