@@ -19,8 +19,8 @@
 	
 	
 	
-			// checking if there is an error with the username or password
-			if(isset($_GET['login'])=='error'){
+			// checking if there is an error that can be because of username or password
+			if($_GET['login'] ==='error'){
 				echo'<font color="#FF0000"><p align="center">blogas emailas arba slaptazodis</p></font>';
 			}
 		?>
