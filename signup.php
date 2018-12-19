@@ -17,6 +17,10 @@
 					<input type="text" name="userPhoneNumber" placeholder="(+370) 623 12345">
 					<button type="submit" name="submit">Patvirtinti</button>
 				</form>';
+				if($_GET['signup'] == "success"){
+					echo'<font color="##000000"><p align="center">registracija issiusta administracijai</p></font>';
+					echo'<font color="##000000"><p align="center">registracija bus priimta arba atmesta per 24 valandas</p></font>';
+			}
 			}
 		?>
 	</div>
