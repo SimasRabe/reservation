@@ -9,19 +9,6 @@ if (isset($_POST['submit'])) {
 	$email = mysqli_real_escape_string($conn, $_POST['userEmail']);
 	$pwd = mysqli_real_escape_string($conn, $_POST['userPassword']);
 
-	
-	// checking if empty 
-	if(isset($_GET['empty'])==true){
-		echo'<font color="#FF0000"><p align="center">Norint prisijungti irasykite savo el pasta ir slaptazodi</p>';
-	}
-	
-	
-	
-	// checking if error
-	if(isset($_GET['error'])==true){
-		echo'<font color="#FF0000"><p align="center">blogas emailas arba slaptazodis</p>';
-	}
-	
 	//Error handlers
 	//Check if inputs are empty
 	if (empty($email) || empty($pwd)) {
