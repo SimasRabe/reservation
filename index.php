@@ -13,14 +13,14 @@
 				echo '<p>Prisijungta kaip '.$name.' '.$surname.'. Rolė: '.$role.'</p>';
 			}
 			// checking if the prace where you enter your usser name and password is empty
-			if(isset($_GET['login'])==empty){
+			if(isset($_GET['login'])=='empty'){
 				echo'<font color="#FF0000"><p align="center">Norint prisijungti irasykite savo el pasta ir slaptazodi</p></font>';
 			}
 	
 	
 	
 			// checking if there is an error with the username or password
-			if(isset($_GET['login'])==error){
+			if(isset($_GET['login'])=='error'){
 				echo'<font color="#FF0000"><p align="center">blogas emailas arba slaptazodis</p></font>';
 			}
 		?>
