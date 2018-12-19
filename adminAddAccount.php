@@ -28,14 +28,14 @@
 					</select>
 					<button type="submit" name="submit">Patvirtinti</button>
 				</form>';
-				if(isset($_GET["adminAddAccount"])){
-					if($_GET["adminAddAccount"] == "success"){
+				if(isset($_GET["add"])){
+					if($_GET["add"] == "success"){
 						echo'<font color="##000000"><p align="center">Sėkmingai užsiregistravote!</p></font>';
 					}
-					if($_GET['adminAddAccount'] == "empty"){
+					if($_GET['add'] == "empty"){
 						echo'<font color="##000000"><p align="center">Tam kad užsiregistruotumėte turite užpildyti visus langelius</p></font>';
 					}
-					if($_GET['adminAddAccount'] == "invalid"){
+					if($_GET['add'] == "invalid"){
 						echo'<font color="##000000"><p align="center">Blogai užpildėte langelius, mėginkite vėl!</p></font>';
 					}
 				}
