@@ -29,7 +29,7 @@
 					if($_GET['signup'] == "invalid"){
 						echo'<font color="##000000"><p align="center">Blogai užpildėte langelius, mėginkite vėl!</p></font>';
 					}
-				
+				}
 			}
 		?>
 	</div>
