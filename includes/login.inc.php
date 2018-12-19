@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
 	//Check if inputs are empty
 	if (empty($email) || empty($pwd)) {
 		header("Location: ../index.php?login=empty");
+		echo 'Test';
 		exit();
 	}
 
