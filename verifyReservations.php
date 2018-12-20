@@ -38,6 +38,20 @@
 
 			} else
 				header("Location: index.php");
+		
+		// pasakoma busena
+		if(isset($_GET["reserve"])){
+			if($_GET["reserve"] == "success"){
+				echo'<font color="##000000"><p align="center">Sėkmingai patvirtinta rezervacija</p></font>';
+			}
+			if($_GET['reserve'] == "empty"){
+				echo'<font color="##000000"><p align="center">Kažkas blogai rezervacijos patvirtinime</p></font>';
+			}
+			if($_GET['reserve'] == "invalid"){
+				echo'<font color="##000000"><p align="center">Kažkas blogai rezervacijos patvirtinime</p></font>';
+			}
+		}
+		
 		?>
 	</div>
 </section>
