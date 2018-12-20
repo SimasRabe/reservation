@@ -8,7 +8,7 @@
 
 				include_once 'includes/dbh.inc.php';
 
-				echo '<h2>Pridėti paskyrą</h2>';
+				echo '<h2>Pridėti rezervaciją</h2>';
 				$name =  $_SESSION['userName'];
 				$surname = $_SESSION['userSurname'];
 				$role = $_SESSION['userRole'];
@@ -26,10 +26,10 @@
 			//pridedama busena
 			if(isset($_GET["add"])){
 				if($_GET["add"] == "success"){
-					echo'<font color="##000000"><p align="center">Sėkmingai pakeista paskyra</p></font>';
+					echo'<font color="##000000"><p align="center">Sėkmingai pridėta rezervacija</p></font>';
 				}
 				if($_GET['add'] == "empty"){
-					echo'<font color="##000000"><p align="center">Norint pakeisti reikia pilnai užpildyti</p></font>';
+					echo'<font color="##000000"><p align="center">Norint prideti reikia pilnai užpildyti langelius</p></font>';
 				}
 				if($_GET['add'] == "invalid"){
 					echo'<font color="##000000"><p align="center">Blogai užpildyta</p></font>';
