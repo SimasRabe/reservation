@@ -66,7 +66,7 @@ function updatePrice(checkOut, checkIn) {
 		price = <?php echo $row['roomPrice']; ?>;
 		$('input[name=roomPrice]').val('€'+price*nights);
 	} else
-		$('input[name=roomPrice]').val('Wrong check-in/out dates');
+		$('input[name=roomPrice]').val('Netinkamos datos');
 }
 $('#checkOut').change(function() {
     var checkOut = $("#checkOut").val();
