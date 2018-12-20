@@ -25,6 +25,9 @@
 				if($_GET['reserve'] == "success"){
 					echo'<font color="###FF0000"><p align="center">Pavyko užregistruoti rezervaciją</p></font>';
 				}
+				if($_GET['reserve'] == "alreadyRequested"){
+					echo'<font color="###FF0000"><p align="center">Data jau užrezervuota</p></font>';
+				}
 			}
 			$id = $_GET['id'];
 
