@@ -25,6 +25,19 @@
 				</form>';
 			} else
 				header("Location: index.php");
+		
+			// pasakoma busena
+			if(isset($_GET["edit"])){
+				if($_GET["edit"] == "success"){
+					echo'<font color="##000000"><p align="center">Sėkmingai pakeista paskyra</p></font>';
+				}
+				if($_GET['edit'] == "empty"){
+					echo'<font color="##000000"><p align="center">Norint pakeisti reikia pilnai užpildyti</p></font>';
+				}
+				if($_GET['edit'] == "invalid"){
+					echo'<font color="##000000"><p align="center">Blogai užpildyta</p></font>';
+				}
+			}
 		?>
 	</div>
 </section>
