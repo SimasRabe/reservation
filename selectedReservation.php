@@ -23,7 +23,7 @@
 					echo'<font color="###FF0000"><p align="center">Datos susikerta, bandykite kitas datas</p></font>';
 				}
 				if($_GET['reserve'] == "success"){
-					echo'<font color="###22bd2c"><p align="center">Pavyko užregistruoti rezervaciją</p></font>';
+					echo'<font color="###FF0000"><p align="center">Pavyko užregistruoti rezervaciją</p></font>';
 				}
 			}
 			$id = $_GET['id'];
