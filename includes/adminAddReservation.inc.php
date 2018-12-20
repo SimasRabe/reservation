@@ -48,8 +48,14 @@ if (isset($_POST['submit'])) {
 		exit();
 	}
 	//Check if input characters are valid
-	if (!preg_match("/^[a-z A-Z]*$/", $name) || !preg_match("/^[0-9]*$/", "" + $size) || !preg_match("/^[0-9]*$/", "" + $price)) {
-		header("Location: ../adminAddReservation.php?add=invalid");
+	if (!preg_match("/^[a-z A-Z]*$/", $name)) {
+		header("Location: ../adminAddReservation.php?add=invalidName");
+		exit();
+	}if (!preg_match("/^[0-9]*$/", "" + $size)) {
+		header("Location: ../adminAddReservation.php?add=invalidSize");
+		exit();
+	}if (!preg_match("/^[0-9]*$/", "" + $price)) {
+		header("Location: ../adminAddReservation.php?add=invalidPrice");
 		exit();
 	}
 	//Check if numbers are not correct size
