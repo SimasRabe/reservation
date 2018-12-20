@@ -28,7 +28,7 @@
 				</tr>';
 				while ($row = $result->fetch_assoc()) {
 					echo '<tr class="clickable-row" data-href="selectedReservation.php?id='.$row['roomID'].'">
-							<th><img src="'.$row['roomPictureURL'].'"></th>
+							<th><img height="100" src="'.$row['roomPictureURL'].'"></th>
 							<th>'.$row['roomName'].'</th>
 							<th>'.$row['roomSize'].'</th>
 							<th>'.$row['roomPrice'].'</th>
