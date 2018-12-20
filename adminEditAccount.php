@@ -77,6 +77,7 @@
 						</select>
 						<button type="submit" name="submit">Patvirtinti</button>
 					</form>';
+					// pasakoma busena
 					if(isset($_GET["edit"])){
 						if($_GET["edit"] == "success"){
 							echo'<font color="##000000"><p align="center">Sėkmingai pakeista paskyra</p></font>';
@@ -87,7 +88,7 @@
 						if($_GET['edit'] == "invalid"){
 							echo'<font color="##000000"><p align="center">Blogai užpildyta</p></font>';
 						}
-				}
+					}
 				}
 			} else
 				header("Location: index.php");
