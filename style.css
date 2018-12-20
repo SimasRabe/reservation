@@ -180,8 +180,6 @@ header .nav-login a {
 }
 
 header .nav-login form a {
-    float: left;
-    width: 110px;
     height: 30px;
     margin-right: 10px;
     background-color: #f3f3f3;
@@ -315,7 +313,7 @@ header .nav-login form button:hover {
     display: block;
     margin: 0 auto;
     width: 40%;
-    height: 40px;
+    min-height: 40px;
     border: none;
     background-color: #222;
     font-family: arial;
