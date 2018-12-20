@@ -103,7 +103,7 @@
 								<input type="date" id="checkIn" name="checkIn" value="'.date('Y-m-d').'" readonly="readonly">
 								<p>Išvykimo data</p>
 								<input type="date" id="checkOut" name="checkOut" value="'.date("Y-m-d", strtotime('tomorrow')).'" readonly="readonly">
-								<img src="'.$rowRoom['roomPictureURL'].'">
+								<img width="400" src="'.$rowRoom['roomPictureURL'].'">
 								<button type="submit" name="submit">Patvirtinti rezervaciją</button>
 							</form>';
 						}
