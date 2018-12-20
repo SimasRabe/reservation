@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
 		exit();
 	}
 	//Check if input characters are valid
-	if (!preg_match("/^[a-zA-Z]*$/", $name) || !preg_match("/^[0-9]*$/", $size) || !preg_match("/^[0-9]*$/", $price)) {
+	if (!preg_match("/^[a-z A-Z]*$/", $name) || !preg_match("/^[0-9]*$/", $size) || !preg_match("/^[0-9]*$/", $price)) {
 		header("Location: ../adminAddReservation.php?add=invalid");
 		exit();
 	}
