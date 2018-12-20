@@ -14,7 +14,7 @@
 			}
 			// checking if the prace where you enter your usser name and password is empty
 			if(isset($_GET['login'])=='empty' AND ($_GET['login']) != "success"){
-				echo'<font color="#FF0000"><p align="center">Norint prisijungti irašykite savo Elektroninį paštą ir slaptažodį</p></font>';
+				echo'<font color="#FF0000"><p align="center">Norint prisijungti įrašykite savo El. paštą ir slaptažodį</p></font>';
 				// checking if there is an error that can be because of username or password
 				if($_GET['login'] == "error"){
 					echo'<font color="#FF0000"><p align="center">Blogas E.Paštas arba slaptažodis</p></font>';
