@@ -13,7 +13,19 @@
 				echo '<p>Prisijungta kaip '.$name.' '.$surname.'. Rolė: '.$role.'</p>';
 			}
 			include_once 'includes/dbh.inc.php';
-
+		
+			// pasakoma busena
+			if(isset($_GET["reserve"])){
+				if($_GET["reserve"] == "wrongDates"){
+					echo'<font color="##000000"><p align="center">Blogai pasirinktos datos</p></font>';
+				}
+				if($_GET['reserve'] == "dateOverlaps"){
+					echo'<font color="##000000"><p align="center">Datos susikerta, bandykite kitas datas</p></font>';
+				}
+				if($_GET['reserve'] == "success"){
+					echo'<font color="##000000"><p align="center">Pavyko užregistruoti rezervaciją</p></font>';
+				}
+			}
 			$id = $_GET['id'];
 
 			//Created a template
@@ -78,18 +90,6 @@ $('#checkIn').change(function() {
     var checkIn = $("#checkIn").val();
     updatePrice(checkOut, checkIn);
 });
-// pasakoma busena
-if(isset($_GET["reserve"])){
-	if($_GET["reserve"] == "wrongDates"){
-		echo'<font color="##000000"><p align="center">Blogai pasirinktos datos</p></font>';
-	}
-	if($_GET['reserve'] == "dateOverlaps"){
-		echo'<font color="##000000"><p align="center">Datos susikerta, bandykite kitas datas</p></font>';
-	}
-	if($_GET['reserve'] == "success"){
-		echo'<font color="##000000"><p align="center">Pavyko užregistruoti rezervaciją</p></font>';
-	}
-}
 </script>
 <?php
 	include_once 'footer.php';
