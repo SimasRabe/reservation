@@ -43,7 +43,7 @@
 					<input type="date" id="checkIn" name="checkIn" value="'.date('Y-m-d').'">
 					<p>Išvykimo data</p>
 					<input type="date" id="checkOut" name="checkOut" value="'.date("Y-m-d", strtotime('tomorrow')).'">
-					<img max-height="400" src="'.$row['roomPictureURL'].'">
+					<img max-width="400" src="'.$row['roomPictureURL'].'">
 					<button type="submit" name="submit">Rezervuoti</button>
 				</form>'
 				;
