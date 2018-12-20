@@ -23,6 +23,18 @@
 				</form>';
 			} else
 				header("Location: index.php");
+			//pridedama busena
+			if(isset($_GET["add"])){
+				if($_GET["add"] == "success"){
+					echo'<font color="##000000"><p align="center">Sėkmingai pakeista paskyra</p></font>';
+				}
+				if($_GET['add'] == "empty"){
+					echo'<font color="##000000"><p align="center">Norint pakeisti reikia pilnai užpildyti</p></font>';
+				}
+				if($_GET['add'] == "invalid"){
+					echo'<font color="##000000"><p align="center">Blogai užpildyta</p></font>';
+				}
+			}
 		?>
 	</div>
 </section>
