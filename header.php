@@ -7,7 +7,7 @@
 	
 	<head>
 		<title>Reservations</title>
-		<link rel="stylesheet" type="text/css" href="style.css?version=29">
+		<link rel="stylesheet" type="text/css" href="style.css?version=30">
 	</head>
 	
 
